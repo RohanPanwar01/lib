@@ -1,24 +1,25 @@
 import logo from './logo.svg';
+import { Routes , Route } from 'react-router-dom';
+import Price from './components/price';
+import Faq from './components/FAQ/Faq';
+import AmenitiesLayout from './components/Faci/Faci';
+import HeroSectionWithForm from './components/Home/Home';
+import ContactUs from './components/contact us/Contactus';
 import './App.css';
+import Aboutus from './components/Aboutus/Aboutus';
+import LibraryGallery from './components/Gallery/Gallery';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   <>
+   <Routes>
+    <Route path='/' element={<HeroSectionWithForm/>} />
+    <Route path='/about' element={<Aboutus />} />
+   </Routes>
+   <ContactUs />
+   <Faq />
+   <LibraryGallery />
+   </>
   );
 }
 
