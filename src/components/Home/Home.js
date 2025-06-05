@@ -48,6 +48,7 @@ const HeroSectionWithForm = () => {
             </button>
           </form>
         </div>
+                <br />
       </div>
     </div>
   );
