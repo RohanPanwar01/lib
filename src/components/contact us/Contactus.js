@@ -1,10 +1,11 @@
 import React from 'react';
+import Co from '../../image/co.jpeg';
 
 const ContactUs = () => {
   return (
     <div className="w-full">
       {/* Hero Section */}
-      <div className="relative bg-cover bg-center h-64 md:h-80" style={{ backgroundImage: 'url("/your-placeholder.jpg")' }}>
+      <div className="relative bg-cover bg-center h-64 md:h-80" style={{ backgroundImage: `url(${Co})` }}>
         <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
           <h1 className="text-white text-4xl md:text-5xl font-bold">Contact Us</h1>
         </div>

@@ -4,12 +4,12 @@ import Logo from '../../image/a1.jpg';
 import { PhoneIcon } from '@heroicons/react/24/solid'; // install @heroicons/react
 
 const menuItems = [
-  { name: "About", path: "/about" },
-  { name: "Careers", path: "/careers" },
-  { name: "History", path: "/history" },
+  { name: "Packages", path: "/pacakages" },
+  { name: "Our Facilities", path: "/facilities" },
+  { name: "About Us", path: "/about" },
   { name: "Services", path: "/services" },
-  { name: "Projects", path: "/projects" },
-  { name: "Blog", path: "/blog" },
+  { name: "FAQ", path: "/faq" },
+  { name: "Contact Us", path: "/contactus" },
 ];
 
 const WhatsAppIcon = () => (
@@ -111,6 +111,9 @@ function Header() {
           }`}
       >
         <div className="flex justify-between items-center mb-6">
+
+
+            {/* logo */}
         <div className="flex-1 md:flex md:items-center md:gap-12">
             <Link className="block text-teal-600 dark:text-teal-300" to="/">
               <span className="sr-only">Home</span>
@@ -121,6 +124,10 @@ function Header() {
               />
             </Link>
           </div>
+
+          {/* logo   */}
+
+
           <button
             onClick={() => setIsMenuOpen(false)}
             className="text-white text-xl"

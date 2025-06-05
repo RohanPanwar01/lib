@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import { MapPinIcon } from '@heroicons/react/24/solid';
 function Footer() {
     return (
         <footer className="bg-white dark:bg-gray-900">
@@ -51,8 +53,7 @@ function Footer() {
                         </div>
 
                         <p className="mt-4 max-w-xs text-gray-500 dark:text-gray-400">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse non cupiditate quae nam
-                            molestias.
+                        Experience the Best Learning Environment at self study Library and Study Rooms, located in a prime area of Nasrullaganj, at an affordable cost.
                         </p>
 
                         <ul className="mt-8 flex gap-6">
@@ -154,36 +155,43 @@ function Footer() {
 
                     <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:col-span-2 lg:grid-cols-4">
                         <div>
-                            <p className="font-medium text-gray-900 dark:text-white">Services</p>
+                            <p className="font-medium text-gray-900 dark:text-white">Important links
+                            </p>
 
                             <ul className="mt-6 space-y-4 text-sm">
                                 <li>
+                                    <Link to='/pacakages' className="text-gray-700 transition hover:opacity-75 dark:text-gray-200">
+                                        Pacakages
+                                    </Link>
+                                </li>
+
+                                <li>
+                                    <Link to='/Facilities' className="text-gray-700 transition hover:opacity-75 dark:text-gray-200">
+                                        Facilities
+                                    </Link>
+                                </li>
+
+                                <li>
+                                    <Link to='/Gallery' className="text-gray-700 transition hover:opacity-75 dark:text-gray-200">
+                                        Gallery
+                                    </Link>
+                                </li>
+
+                                <li>
                                     <a href="#" className="text-gray-700 transition hover:opacity-75 dark:text-gray-200">
-                                        1on1 Coaching
+                                        Sitemap
                                     </a>
                                 </li>
 
                                 <li>
                                     <a href="#" className="text-gray-700 transition hover:opacity-75 dark:text-gray-200">
-                                        Company Review
+                                        Privacy Policy
                                     </a>
                                 </li>
 
                                 <li>
                                     <a href="#" className="text-gray-700 transition hover:opacity-75 dark:text-gray-200">
-                                        Accounts Review
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a href="#" className="text-gray-700 transition hover:opacity-75 dark:text-gray-200">
-                                        HR Consulting
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a href="#" className="text-gray-700 transition hover:opacity-75 dark:text-gray-200">
-                                        SEO Optimisation
+                                        Terms & conditions
                                     </a>
                                 </li>
                             </ul>
@@ -238,16 +246,17 @@ function Footer() {
                         </div>
 
                         <div>
-                            <p className="font-medium text-gray-900 dark:text-white">Legal</p>
+                            <p className="font-medium text-gray-900 dark:text-white">Address</p>
 
                             <ul className="mt-6 space-y-4 text-sm">
-                                <li>
-                                    <a href="#" className="text-gray-700 transition hover:opacity-75 dark:text-gray-200">
-                                        Accessibility
-                                    </a>
-                                </li>
+                            <li className="flex items-start gap-2">
+  <MapPinIcon className="h-12 w-12 text-red-700 dark:text-gray-200 mt-1" />
+  <a href="https://maps.app.goo.gl/EfPMWAPqj4JzoZUH7" className="text-gray-700 transition hover:opacity-75 dark:text-gray-200">
+    Near HDFC BANK, Tehsil BHERUNDA, Nasrullaganj, Madhya Pradesh 466331
+  </a>
+</li>
 
-                                <li>
+                                {/* <li>
                                     <a href="#" className="text-gray-700 transition hover:opacity-75 dark:text-gray-200">
                                         Returns Policy
                                     </a>
@@ -263,7 +272,7 @@ function Footer() {
                                     <a href="#" className="text-gray-700 transition hover:opacity-75 dark:text-gray-200">
                                         Hiring-3 Statistics
                                     </a>
-                                </li>
+                                </li> */}
                             </ul>
                         </div>
                     </div>

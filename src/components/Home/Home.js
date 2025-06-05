@@ -1,8 +1,12 @@
 import React from 'react';
 import palImage from '../../image/lib.jpeg'
+import AmenitiesLayout from '../Faci/Faci';
+import LibraryGallery from '../Gallery/Gallery';
+import Faq from '../FAQ/Faq';
 
 const HeroSectionWithForm = () => {
   return (
+    <>
     <div
       className="relative w-full min-h-screen bg-cover bg-center flex items-center justify-center"
       style={{
@@ -48,9 +52,17 @@ const HeroSectionWithForm = () => {
             </button>
           </form>
         </div>
+        <br />
       </div>
     </div>
+<AmenitiesLayout />
+<LibraryGallery />
+<Faq />
+
+    </>
   );
 };
 
+
 export default HeroSectionWithForm;
+
