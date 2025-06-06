@@ -2,23 +2,39 @@ import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper/modules'; // Removed Pagination
 import 'swiper/css';
+import b1 from './b1.jpg'
+import b2 from './b2.jpg'
+import b3 from './b3.jpg'
+import b4 from './b4.jpg'
+import b5 from './b5.jpg'
+import b6 from './b6.jpg'
+
+
 
 const LibraryGallery = () => {
   const slides = [
     {
-      image: '/images/cabin.jpg',
+      image: b1,
       caption: 'Private cabin for students with study lamp',
     },
     {
-      image: '/images/open-area.jpg',
+      image: b5,
       caption: 'Spacious Open Area',
     },
     {
-      image: '/images/study-room.jpg',
+      image: b3,
       caption: 'Study rooms with comfortable Chairs',
     },
     {
-      image: '/images/study-room.jpg',
+      image: b4,
+      caption: 'Mandir',
+    },
+    {
+      image: b5,
+      caption: 'Study rooms with comfortable Chairs',
+    },
+    {
+      image: b6,
       caption: 'Study rooms with comfortable Chairs',
     },
   ];

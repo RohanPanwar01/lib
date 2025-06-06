@@ -5,7 +5,7 @@ const amenities = [
   {
     icon: <Wifi className="text-red-500" size={48} />,
     title: 'High-speed Wi-Fi',
-    description: 'High-speed Wi-Fi at all K3 library branches, ensuring seamless access to online resources for academic research and study.'
+    description: 'High-speed Wi-Fi at all self study library branches, ensuring seamless access to online resources for academic research and study.'
   },
   {
     icon: <ParkingCircle className="text-red-500" size={48} />,

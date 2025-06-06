@@ -1,10 +1,12 @@
 import React from 'react';
+import Co from '../../image/co.jpeg';
+import { Link } from 'react-router-dom';
 
 const ContactUs = () => {
   return (
     <div className="w-full">
       {/* Hero Section */}
-      <div className="relative bg-cover bg-center h-64 md:h-80" style={{ backgroundImage: 'url("/your-placeholder.jpg")' }}>
+      <div className="relative bg-cover bg-center h-64 md:h-80" style={{ backgroundImage: `url(${Co})` }}>
         <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
           <h1 className="text-white text-4xl md:text-5xl font-bold">Contact Us</h1>
         </div>
@@ -19,12 +21,17 @@ const ContactUs = () => {
 
           <div className="flex items-center gap-3 mb-4">
             <span className="text-red-500 text-xl">📞</span>
+             <Link
+                         to="tel:+919993938894"
+                          target="_blank"
+                          rel="noopener noreferrer">
             <p className="text-gray-800">+91 9993938894</p>
+            </Link>
           </div>
 
           <div className="flex items-center gap-3 mb-4">
             <span className="text-red-500 text-xl">📧</span>
-            <p className="text-gray-800">info@k3library.com</p>
+            <p className="text-gray-800">abc@gmail.com</p>
           </div>
 
           <h2 className="text-2xl font-bold mt-10 mb-4">Address</h2>

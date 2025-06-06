@@ -1,8 +1,12 @@
 import React from 'react';
 import palImage from '../../image/lib.jpeg'
+import AmenitiesLayout from '../Faci/Faci';
+import LibraryGallery from '../Gallery/Gallery';
+import Faq from '../FAQ/Faq';
 
 const HeroSectionWithForm = () => {
   return (
+    <>
     <div
       className="relative w-full min-h-screen bg-cover bg-center flex items-center justify-center"
       style={{
@@ -15,6 +19,7 @@ const HeroSectionWithForm = () => {
         {/* Text Section */}
         <div className="text-white space-y-6 lg:pl-10">
           <h1 className="text-4xl md:text-5xl lg:text-4xl font-bold leading-tight">
+            <br/><br/>
             Experience the Ultimate Self Study Environment at Top Library in Nasrullaganj
           </h1>
           <p className="text-base md:text-lg lg:text-xl">
@@ -48,10 +53,17 @@ const HeroSectionWithForm = () => {
             </button>
           </form>
         </div>
-                <br>
+        <br />
       </div>
     </div>
+<AmenitiesLayout />
+<LibraryGallery />
+<Faq />
+
+    </>
   );
 };
 
+
 export default HeroSectionWithForm;
+

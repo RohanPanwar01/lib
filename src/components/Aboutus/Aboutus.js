@@ -1,5 +1,7 @@
 import React from "react";
 import palImage from '../../image/a1.jpg';
+import B2 from '../../image/b2.jpg';
+import B3 from '../../image/b3.jpg';
 
 function Aboutus() {
   return (
@@ -19,12 +21,11 @@ function Aboutus() {
         <div className="p-8 md:p-12 lg:px-16 lg:py-24 flex items-center">
           <div className="mx-auto max-w-xl text-center sm:text-left">
             <h2 className="text-2xl font-bold text-gray-900 md:text-3xl dark:text-white">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit
+              Become A Member
             </h2>
             <p className="text-gray-500 md:mt-4 dark:text-gray-300">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, egestas tempus tellus etiam
-              sed. Quam a scelerisque amet ullamcorper eu enim et fermentum, augue. Aliquet amet volutpat
-              quisque ut interdum tincidunt duis.
+              Welcome to Self Study Library and Study Zone, located in the vibrant city of Nasrullaganj
+              , Madhya Pradesh. Our platform is designed to provide students, scholars, and professionals of different exams like UPSC, MPPSC, IAS, LAW CAT, MEDICAL NEET, IIT JEE, CHARTERED ACCOUNTANT etc. with access to a vast collection of academic resources, study materials, and virtual learning tools, all in one convenient location.
             </p>
             <div className="mt-4 md:mt-8">
               <a
@@ -38,8 +39,8 @@ function Aboutus() {
         </div>
 
         <img
+        src={B2}
           alt="Library"
-          src="https://images.unsplash.com/photo-1464582883107-8adf2dca8a9f?auto=format&fit=crop&w=1770&q=80"
           className="h-56 w-full object-cover sm:h-full"
         />
       </section><br /><br />
@@ -48,20 +49,19 @@ function Aboutus() {
       <section className="overflow-hidden bg-gray-50 flex flex-col sm:grid sm:grid-cols-2 dark:bg-gray-900">
         {/* For alternating layout on desktop, put the image first */}
         <img
+        src={B3}
           alt="Library"
-          src="https://images.unsplash.com/photo-1464582883107-8adf2dca8a9f?auto=format&fit=crop&w=1770&q=80"
           className="h-56 w-full object-cover sm:h-full"
         />
 
         <div className="p-8 md:p-12 lg:px-16 lg:py-24 flex items-center">
           <div className="mx-auto max-w-xl text-center sm:text-left">
             <h2 className="text-2xl font-bold text-gray-900 md:text-3xl dark:text-white">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit
+            Ready To Get Started?
             </h2>
             <p className="text-gray-500 md:mt-4 dark:text-gray-300">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, egestas tempus tellus etiam
-              sed. Quam a scelerisque amet ullamcorper eu enim et fermentum, augue. Aliquet amet volutpat
-              quisque ut interdum tincidunt duis.
+            As a premier library and study center in Nasrullaganj
+            , we strive to provide our users with the best possible experience. Our physical library is equipped with air conditioned comfortable seating, high-speed internet access, and a conducive environment for studying and research. Our team of experienced librarians is always on hand to assist you in finding the materials you need and to provide guidance on how to make the most of our resources.
             </p>
             <div className="mt-4 md:mt-8">
               <a

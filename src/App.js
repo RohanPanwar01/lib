@@ -15,10 +15,16 @@ function App() {
    <Routes>
     <Route path='/' element={<HeroSectionWithForm/>} />
     <Route path='/about' element={<Aboutus />} />
+    <Route path='/pacakages' element={<Price />} />
+    <Route path='/facilities' element={<AmenitiesLayout />} />
+    <Route path='/gallery' element={<LibraryGallery />} />
+    <Route path='/faq' element={<Faq />} />
+    <Route path='/contactus' element={<ContactUs />} />
+
+
+
+
    </Routes>
-   <ContactUs />
-   <Faq />
-   <LibraryGallery />
    </>
   );
 }

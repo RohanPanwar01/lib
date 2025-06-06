@@ -4,7 +4,7 @@ function Faq() {
   return (
     <div className="min-h-screen bg-white px-4 py-12 sm:px-10">
       <h1 className="text-3xl sm:text-4xl font-extrabold text-center text-gray-900 mb-10">
-        Frequently Asked Questions About Our Library In Indore
+        Frequently Asked Questions About Our Library In Nasrullaganj
       </h1>
 
       {/* Left Section */}
@@ -14,7 +14,7 @@ function Faq() {
             OUR TEAM IS READY TO ANSWER YOUR QUESTIONS!
           </h2>
           <p className="text-gray-700 text-md mb-6">
-            If you have more questions about our <strong>library in Indore</strong> or want to know more about our study room facilities, please feel free to fill out the form below or call/WhatsApp us. For more detailed questions, visit our FAQ page to get all your queries answered.
+            If you have more questions about our <strong>library in Nasrullaganj</strong> or want to know more about our study room facilities, please feel free to fill out the form below or call/WhatsApp us. For more detailed questions, visit our FAQ page to get all your queries answered.
           </p>
           <button className="bg-red-500 hover:bg-red-600 text-white font-bold py-3 px-6 rounded-md transition-all">
             MORE QUESTIONS ABOUT LIBRARY?
