@@ -7,6 +7,8 @@ import { BrowserRouter } from 'react-router-dom';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 
+
+document.title = "Self Study Library";
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
  
