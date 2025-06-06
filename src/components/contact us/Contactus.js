@@ -1,7 +1,6 @@
 import React from 'react';
 import Co from '../../image/co.jpeg';
 import { Link } from 'react-router-dom';
-
 const ContactUs = () => {
   return (
     <div className="w-full">

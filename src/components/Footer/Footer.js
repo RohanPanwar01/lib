@@ -43,7 +43,6 @@ function Footer() {
                                     fill="currentColor"
                                 />
                                 <path
-                                    d="M117.67 18.7047C117.679 18.7405 117.68 18.7779 117.673 18.8141C117.665 18.8502 117.65 18.8844 117.628 18.914C117.606 18.9436 117.578 18.968 117.545 18.9854C117.513 19.0029 117.477 19.0129 117.44 19.0147C117.068 19.1356 116.681 19.1997 116.29 19.2047C115.695 19.2354 115.108 19.0665 114.62 18.7247C114.409 18.5783 114.238 18.3822 114.121 18.1537C114.004 17.9252 113.945 17.6713 113.95 17.4147V15.0647C113.971 14.6163 113.821 14.1766 113.53 13.8347C113.39 13.6784 113.216 13.5552 113.023 13.4739C112.829 13.3927 112.62 13.3554 112.41 13.3647C112.221 13.3576 112.033 13.3935 111.859 13.4697C111.686 13.5459 111.533 13.6605 111.41 13.8047C111.146 14.1398 111.011 14.5586 111.03 14.9847V18.6747C111.03 18.8647 110.94 18.9647 110.75 18.9647H109.06C109.021 18.9696 108.981 18.9654 108.944 18.9526C108.906 18.9397 108.872 18.9185 108.844 18.8905C108.816 18.8626 108.795 18.8286 108.782 18.7912C108.769 18.7538 108.765 18.714 108.77 18.6747V15.0647C108.792 14.6212 108.653 14.1846 108.38 13.8347C108.258 13.6877 108.105 13.5694 107.932 13.4882C107.76 13.407 107.571 13.3648 107.38 13.3647C107.176 13.3565 106.973 13.3914 106.783 13.4673C106.593 13.5431 106.422 13.6581 106.28 13.8047C105.994 14.1291 105.847 14.5529 105.87 14.9847V18.6747C105.875 18.714 105.871 18.7538 105.858 18.7912C105.845 18.8286 105.824 18.8626 105.796 18.8905C105.768 18.9185 105.734 18.9397 105.697 18.9526C105.659 18.9654 105.619 18.9696 105.58 18.9647H103.95C103.76 18.9647 103.67 18.8647 103.67 18.6747V13.9647C103.682 13.8845 103.675 13.8027 103.649 13.7257C103.624 13.6488 103.581 13.5788 103.523 13.5215C103.466 13.4642 103.396 13.4211 103.319 13.3956C103.242 13.3701 103.16 13.363 103.08 13.3747H102.75C102.53 13.3747 102.42 13.2947 102.42 13.1347V11.9547C102.415 11.8817 102.435 11.8091 102.477 11.7491C102.519 11.689 102.58 11.6451 102.65 11.6247C102.996 11.499 103.362 11.438 103.73 11.4447C104.083 11.4146 104.438 11.485 104.753 11.6478C105.068 11.8106 105.33 12.0591 105.51 12.3647C105.847 12.045 106.247 11.7982 106.684 11.6399C107.121 11.4816 107.586 11.4152 108.05 11.4447C108.501 11.4227 108.95 11.5072 109.362 11.6914C109.774 11.8756 110.136 12.1542 110.42 12.5047C110.751 12.145 111.158 11.8634 111.611 11.68C112.064 11.4967 112.552 11.4164 113.04 11.4447C113.476 11.4243 113.912 11.4946 114.32 11.6513C114.728 11.8079 115.099 12.0474 115.41 12.3547C115.714 12.6752 115.949 13.0541 116.102 13.4684C116.255 13.8826 116.323 14.3237 116.3 14.7647V16.6947C116.3 17.0747 116.47 17.2647 116.79 17.2647C116.945 17.2719 117.1 17.2551 117.25 17.2147C117.457 17.2147 117.567 17.2947 117.58 17.4547L117.67 18.7047Z"
                                     fill="currentColor"
                                 />
                                 <path
@@ -51,18 +50,18 @@ function Footer() {
                                     fill="currentColor"
                                 />
                             </svg> */}
-  <Link className="block text-teal-600 dark:text-teal-300 w-12 h-15" to="/">
-              <span className="sr-only">Home</span>
-              <img
-                src={Logo}
-                alt="Library Logo"
-              />
-            </Link>
+                            <Link className="block text-teal-600 dark:text-teal-300 w-12 h-15" to="/">
+                                <span className="sr-only">Home</span>
+                                <img
+                                    src={Logo}
+                                    alt="Library Logo"
+                                />
+                            </Link>
 
                         </div>
 
                         <p className="mt-4 max-w-xs text-gray-500 dark:text-gray-400">
-                        Experience the Best Learning Environment at self study Library and Study Rooms, located in a prime area of Nasrullaganj, at an affordable cost.
+                            Experience the Best Learning Environment at self study Library and Study Rooms, located in a prime area of Nasrullaganj, at an affordable cost.
                         </p>
 
                         {/* <ul className="mt-8 flex gap-6">
@@ -258,12 +257,12 @@ function Footer() {
                             <p className="font-medium text-gray-900 dark:text-white">Address</p>
 
                             <ul className="mt-6 space-y-4 text-sm">
-                            <li className="flex items-start gap-2">
-  <MapPinIcon className="h-12 w-12 text-red-700 dark:text-gray-200 mt-1" />
-  <a href="https://maps.app.goo.gl/EfPMWAPqj4JzoZUH7" className="text-gray-700 transition hover:opacity-75 dark:text-gray-200">
-    Near HDFC BANK, Tehsil BHERUNDA, Nasrullaganj, Madhya Pradesh 466331
-  </a>
-</li>
+                                <li className="flex items-start gap-2">
+                                    <MapPinIcon className="h-12 w-12 text-red-700 dark:text-gray-200 mt-1" />
+                                    <a href="https://maps.app.goo.gl/EfPMWAPqj4JzoZUH7" className="text-gray-700 transition hover:opacity-75 dark:text-gray-200">
+                                        Near HDFC BANK, Tehsil BHERUNDA, Nasrullaganj, Madhya Pradesh 466331
+                                    </a>
+                                </li>
 
                                 {/* <li>
                                     <a href="#" className="text-gray-700 transition hover:opacity-75 dark:text-gray-200">
