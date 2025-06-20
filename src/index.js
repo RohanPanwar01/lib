@@ -14,22 +14,20 @@ root.render(
  
  <BrowserRouter>
  <Header />
- <span class="flex items-center">
-  <span class="h-px flex-1 bg-gray-300"></span>
+ <span className="flex items-center">
+  <span className="h-px flex-1 bg-gray-300"></span>
 
-  <span class="shrink-0 px-4 text-gray-900">
-
-   <div className="py-16 sm:py-20 md:py-24 lg:py-28 ">
-  <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 text-center animate-fadeInUp">
-    Self Study Library
-  </h2>
-</div>
-
-
+  <span className="shrink-0 px-4 text-gray-900">
+    <div className="py-6 sm:py-8 md:py-10 lg:py-12">
+      <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 text-center animate-fadeInUp">
+        Self Study Library
+      </h2>
+    </div>
   </span>
 
-  <span class="h-px flex-1 bg-gray-300"></span>
+  <span className="h-px flex-1 bg-gray-300"></span>
 </span>
+
 
     <App />
     <Footer />

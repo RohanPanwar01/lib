@@ -2,14 +2,15 @@ import React from "react";
 
 function Faq() {
   return (
-    <div className="min-h-screen bg-white px-4 py-12 sm:px-10">
+    <div className="bg-white px-4 py-12 sm:px-10 pb-20">
       <h1 className="text-3xl sm:text-4xl font-extrabold text-center text-gray-900 mb-10">
         Frequently Asked Questions About Our Library In Nasrullaganj
       </h1>
 
-      {/* Left Section */}
-      <div className="grid md:grid-cols-2 gap-10 max-w-6xl mx-auto">
-        <div>
+      {/* Flex Layout Instead of Grid */}
+      <div className="flex flex-col md:flex-row gap-10 max-w-6xl mx-auto items-start">
+        {/* Left Section */}
+        <div className="w-full md:w-1/2 self-start">
           <h2 className="text-xl font-bold text-red-600 mb-4">
             OUR TEAM IS READY TO ANSWER YOUR QUESTIONS!
           </h2>
@@ -22,11 +23,10 @@ function Faq() {
         </div>
 
         {/* Right Section */}
-        <div className="space-y-8">
+        <div className="w-full md:w-1/2 space-y-8 self-start">
           {/* Timing Section */}
           <div>
             <h3 className="text-2xl font-bold text-gray-900 mb-4">Timing</h3>
-
             <Accordion
               question="What are the library timings, and are they flexible?"
               answer="Our library operates from 8:00 AM to 10:00 PM daily. We also offer flexible slots for students who require early morning or late-night study options."
@@ -44,7 +44,6 @@ function Faq() {
           {/* Facilities Section */}
           <div>
             <h3 className="text-2xl font-bold text-gray-900 mb-4">Facilities</h3>
-
             <Accordion
               question="How safe is the library's environment for girls?"
               answer="The library maintains a highly secure and friendly environment with CCTV surveillance and a dedicated staff to ensure safety, especially for female students."
@@ -55,17 +54,16 @@ function Faq() {
             />
           </div>
 
-
+          {/* Space Section - Updated */}
           <div>
             <h3 className="text-2xl font-bold text-gray-900 mb-4">Space</h3>
-
             <Accordion
-              question="How safe is the library's environment for girls?"
-              answer="The library maintains a highly secure and friendly environment with CCTV surveillance and a dedicated staff to ensure safety, especially for female students."
+              question="What kind of seating arrangement do you offer?"
+              answer="We provide various seating types including open seating and cabin-style private areas to accommodate all learning preferences."
             />
             <Accordion
-              question="Do you have Cabin system type seating?"
-              answer="Yes, we offer both open and cabin-style seating to meet different study preferences. Cabins provide a more private and quiet atmosphere."
+              question="Is the library spacious and well-ventilated?"
+              answer="Yes, our facility is designed to provide ample space, natural lighting, and good ventilation for a comfortable study environment."
             />
           </div>
         </div>

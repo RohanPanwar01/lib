@@ -1,5 +1,5 @@
 import React from 'react';
-import palImage from '../../image/lib.jpeg'
+import palImage from '../../image/lib.jpeg';
 import AmenitiesLayout from '../Faci/Faci';
 import LibraryGallery from '../Gallery/Gallery';
 import Faq from '../FAQ/Faq';
@@ -7,63 +7,109 @@ import Faq from '../FAQ/Faq';
 const HeroSectionWithForm = () => {
   return (
     <>
-    <div
-      className="relative w-full min-h-screen bg-cover bg-center flex items-center justify-center"
-      style={{
-        backgroundImage: `url(${palImage})`,}}
-    >
-      {/* Dark overlay */}
-      <div className="absolute inset-0 bg-black bg-opacity-60"></div>
+      <div
+        className="relative w-full bg-cover bg-center flex items-center justify-center py-20 px-4 md:py-28"
+        style={{ backgroundImage: `url(${palImage})` }}
+      >
+        {/* Overlay */}
+        <div className="absolute inset-0 bg-black bg-opacity-60"></div>
 
-      <div className="container mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center relative z-10">
-        {/* Text Section */}
-        <div className="text-white space-y-6 lg:pl-10">
-          <h1 className="text-4xl md:text-5xl lg:text-4xl font-bold leading-tight">
-            <br/><br/>
-            Experience the Ultimate Self Study Environment at Top Library in Nasrullaganj
-          </h1>
-          <p className="text-base md:text-lg lg:text-xl">
-            Looking for the best library in Nasrullaganj? Self Study Library and Study Rooms is the ultimate destination for students and scholars in Nasrullaganj. Our modern facilities, peaceful ambiance, and fully-equipped study rooms provide the perfect environment for focused and uninterrupted self-study.
-          </p>
-          <p className="text-base md:text-lg lg:text-xl">
-            We cater to students preparing for UPSC, MPPSC, IAS, LAW CAT, MEDICAL NEET, IIT JEE, CA, or any other exam. Join us today and take the first step towards academic success!
-          </p><br /><br />
-        </div>
+        {/* Content Container */}
+        <div className="relative z-10 w-full max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          {/* Left Content */}
+          <div className="text-white space-y-6 px-2 lg:px-8">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight">
+              Experience the Ultimate Self Study Environment at Top Library in Nasrullaganj
+            </h1>
+            <p className="text-base sm:text-lg md:text-xl text-gray-200">
+              Looking for the best library in Nasrullaganj? Self Study Library and Study Rooms is the ultimate destination for students and scholars. Our modern facilities and peaceful ambiance provide the perfect space for focused and uninterrupted self-study.
+            </p>
+            <p className="text-base sm:text-lg md:text-xl text-gray-300">
+              We cater to UPSC, MPPSC, IAS, LAW CAT, MEDICAL NEET, IIT JEE, CA, and other aspirants. Join us today and take the first step towards success!
+            </p>
+          </div>
 
-        {/* Form Section */}
-        <div className="bg-white p-8 md:p-10 rounded-2xl shadow-xl space-y-6">
-          <h2 className="text-2xl font-semibold text-gray-800 mb-4">Schedule a visit to our library in Nasrullaganj</h2>
-          <form className="space-y-4">
-            <input type="text" placeholder="Name" className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:border-indigo-500" />
-            <input type="email" placeholder="Email" className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:border-indigo-500" />
-            <input type="tel" placeholder="Phone" className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:border-indigo-500" />
-            <input type="date" className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:border-indigo-500" />
-            <input type="time" className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:border-indigo-500" />
-            {/* <select className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:border-indigo-500">
-              <option>Location</option>
-            </select>
-            <select className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:border-indigo-500">
-              <option>I am interested in</option>
-            </select> */}
-            <button
-              type="submit"
-              className="w-full p-3 bg-indigo-600 text-white rounded-md hover:bg-indigo-700 transition"
-            >
-              Submit
-            </button>
-          </form>
+          {/* Right Form */}
+          <div className="bg-white rounded-2xl shadow-2xl p-6 sm:p-8 space-y-6">
+            <h2 className="text-2xl font-bold text-gray-800">
+              Schedule a visit to our library in Nasrullaganj
+            </h2>
+
+            <form className="space-y-4">
+              <div>
+                <label htmlFor="name" className="block text-sm font-medium text-gray-700">Name</label>
+                <input
+                  id="name"
+                  type="text"
+                  placeholder="Enter your name"
+                  className="w-full mt-1 p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                  aria-label="Name"
+                />
+              </div>
+
+              <div>
+                <label htmlFor="email" className="block text-sm font-medium text-gray-700">Email</label>
+                <input
+                  id="email"
+                  type="email"
+                  placeholder="Enter your email"
+                  className="w-full mt-1 p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                  aria-label="Email"
+                />
+              </div>
+
+              <div>
+                <label htmlFor="phone" className="block text-sm font-medium text-gray-700">Phone</label>
+                <input
+                  id="phone"
+                  type="tel"
+                  placeholder="Enter your phone number"
+                  className="w-full mt-1 p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                  aria-label="Phone"
+                />
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div>
+                  <label htmlFor="date" className="block text-sm font-medium text-gray-700">Date</label>
+                  <input
+                    id="date"
+                    type="date"
+                    className="w-full mt-1 p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                    aria-label="Visit Date"
+                  />
+                </div>
+
+                <div>
+                  <label htmlFor="time" className="block text-sm font-medium text-gray-700">Time</label>
+                  <input
+                    id="time"
+                    type="time"
+                    className="w-full mt-1 p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                    aria-label="Visit Time"
+                  />
+                </div>
+              </div>
+
+              <button
+                type="submit"
+                className="w-full bg-indigo-600 text-white py-3 rounded-md font-semibold hover:bg-indigo-700 transition"
+              >
+                Submit
+              </button>
+            </form>
+          </div>
         </div>
-        <br />
       </div>
-    </div>
-<AmenitiesLayout />
-<LibraryGallery />
-<Faq />
 
+      {/* Bottom Space after Hero Section */}
+      <div className="py-10">
+        <AmenitiesLayout />
+        <LibraryGallery />
+        <Faq />
+      </div>
     </>
   );
 };
 
-
 export default HeroSectionWithForm;
-
