@@ -8,33 +8,45 @@ import b3 from './b3.jpg'
 import b4 from './b4.jpg'
 import b5 from './b5.jpg'
 import b6 from './b6.jpg'
+import q1 from '../../image/q1.jpg'
+import q2 from '../../image/q2.jpg'
+
+
 
 
 
 const LibraryGallery = () => {
   const slides = [
-    {
-      image: b1,
-      caption: 'Private cabin for students with study lamp',
-    },
+    // {
+    //   image: b1,
+    //   caption: 'Private cabin for students with study lamp',
+    // },
     {
       image: b5,
       caption: 'Spacious Open Area',
     },
-    {
-      image: b3,
-      caption: 'Study rooms with comfortable Chairs',
-    },
+    // {
+    //   image: b3,
+    //   caption: 'Study rooms with comfortable Chairs',
+    // },
     {
       image: b4,
       caption: 'Mandir',
     },
-    {
-      image: b5,
+    // {
+    //   image: b5,
+    //   caption: 'Study rooms with comfortable Chairs',
+    // },
+    // {
+    //   image: b6,
+    //   caption: 'Study rooms with comfortable Chairs',
+    // },
+     {
+      image: q1,
       caption: 'Study rooms with comfortable Chairs',
     },
-    {
-      image: b6,
+     {
+      image: q2,
       caption: 'Study rooms with comfortable Chairs',
     },
   ];

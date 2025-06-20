@@ -54,7 +54,7 @@ Affordable Packages and Membership Plans for Library
           <div className="text-center">
             <h2 className="text-lg font-medium text-gray-900">3 Month</h2>
             <p className="mt-2 sm:mt-4">
-              <strong className="text-3xl font-bold text-gray-900 sm:text-4xl">1200Rs</strong>
+              <strong className="text-3xl font-bold text-gray-900 sm:text-4xl">1500Rs</strong>
               <span className="text-sm font-medium text-gray-700"></span>
             </p>
           </div>
@@ -92,7 +92,7 @@ Affordable Packages and Membership Plans for Library
           <div className="text-center">
             <h2 className="text-lg font-medium text-gray-900">6 Month</h2>
             <p className="mt-2 sm:mt-4">
-              <strong className="text-3xl font-bold text-gray-900 sm:text-4xl">2800Rs</strong>
+              <strong className="text-3xl font-bold text-gray-900 sm:text-4xl">3000Rs</strong>
               <span className="text-sm font-medium text-gray-700"></span>
             </p>
           </div>

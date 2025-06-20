@@ -185,7 +185,7 @@ function Footer() {
                                     </Link>
                                 </li>
 
-                                <li>
+                                {/* <li>
                                     <a href="#" className="text-gray-700 transition hover:opacity-75 dark:text-gray-200">
                                         Sitemap
                                     </a>
@@ -201,7 +201,7 @@ function Footer() {
                                     <a href="#" className="text-gray-700 transition hover:opacity-75 dark:text-gray-200">
                                         Terms & conditions
                                     </a>
-                                </li>
+                                </li> */}
                             </ul>
                         </div>
 
@@ -216,9 +216,9 @@ function Footer() {
                                 </li>
 
                                 <li>
-                                    <a href="#" className="text-gray-700 transition hover:opacity-75 dark:text-gray-200">
+                                    <Link to='/team' className="text-gray-700 transition hover:opacity-75 dark:text-gray-200">
                                         Meet the Team
-                                    </a>
+                                    </Link>
                                 </li>
 
                                 <li>
@@ -246,9 +246,14 @@ function Footer() {
                                 </li>
 
                                 <li>
-                                    <a href="tel:+91 99939 38894" className="text-gray-700 transition hover:opacity-75 dark:text-gray-200">
+                                    <span
+  className="rounded-full border border-purple-500 px-2.5 py-0.5 text-sm whitespace-nowrap text-purple-700"
+>
+    <a href="tel:+91 99939 38894">
                                         Live Chat
                                     </a>
+</span>
+                                    
                                 </li>
                             </ul>
                         </div>

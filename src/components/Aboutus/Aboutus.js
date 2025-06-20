@@ -1,7 +1,7 @@
 import React from "react";
 import palImage from '../../image/a1.jpg';
-import B2 from '../../image/b2.jpg';
-import B3 from '../../image/b3.jpg';
+import B2 from '../../image/q1.jpg';
+import B3 from '../../image/q2.jpg';
 
 function Aboutus() {
   return (
