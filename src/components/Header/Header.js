@@ -49,6 +49,16 @@ function Header() {
 
             {/* Call and WhatsApp Buttons */}
             <div className="flex items-center gap-4 ml-6">
+ <Link
+                to="https://management01.onrender.com/"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 rounded-md bg-green-600 px-5 py-2.5 text-sm font-medium text-white shadow-sm dark:hover:bg-green-500"
+                aria-label="WhatsApp"
+              >
+          
+                Login
+              </Link>
+
               <Link
                 to="tel:+919993938894"
                 className="flex items-center gap-2 rounded-md bg-red-600 px-5 py-2.5 text-sm font-medium text-white shadow-sm dark:hover:bg-red-500"
@@ -118,6 +128,15 @@ function Header() {
         </ul>
 
         <div className="mt-8 space-y-4">
+<Link
+            to="https://management01.onrender.com/"
+            rel="noopener noreferrer"
+            className="block w-full text-center bg-green-600 text-white py-2 rounded flex items-center justify-center gap-2"
+            onClick={() => setIsMenuOpen(false)}
+          >
+            Login
+          </Link>
+
           <Link
             to="tel:+919993938894"
             className="block w-full text-center bg-red-600 text-white py-2 rounded flex items-center justify-center gap-2"

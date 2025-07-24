@@ -1,10 +1,51 @@
-import React from 'react';
+import React, { useState } from 'react';
 import palImage from '../../image/lib.jpeg';
 import AmenitiesLayout from '../Faci/Faci';
 import LibraryGallery from '../Gallery/Gallery';
 import Faq from '../FAQ/Faq';
 
 const HeroSectionWithForm = () => {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    phone: '',
+    date: '',
+    time: '',
+  });
+
+  const [status, setStatus] = useState('');
+
+  const handleChange = (e) => {
+    setFormData(prev => ({
+      ...prev,
+      [e.target.id]: e.target.value
+    }));
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      const res = await fetch('https://management-api-yeuz.onrender.com/VisitForm', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await res.json();
+
+      if (res.ok) {
+        setStatus('Form submitted successfully!');
+        setFormData({ name: '', email: '', phone: '', date: '', time: '' });
+      } else {
+        setStatus(`Error: ${data.message}`);
+      }
+    } catch (error) {
+      console.error(error);
+      setStatus('Something went wrong.');
+    }
+  };
+
   return (
     <>
       <div
@@ -22,7 +63,7 @@ const HeroSectionWithForm = () => {
               Experience the Ultimate Self Study Environment at Top Library in Nasrullaganj
             </h1>
             <p className="text-base sm:text-lg md:text-xl text-gray-200">
-              Looking for the best library in Nasrullaganj? Self Study Library and Study Rooms is the ultimate destination for students and scholars. Our modern facilities and peaceful ambiance provide the perfect space for focused and uninterrupted self-study.
+              Looking for the best library in Nasrullaganj? Self Study Library and Study Rooms is the ultimate destination for students and scholars.
             </p>
             <p className="text-base sm:text-lg md:text-xl text-gray-300">
               We cater to UPSC, MPPSC, IAS, LAW CAT, MEDICAL NEET, IIT JEE, CA, and other aspirants. Join us today and take the first step towards success!
@@ -35,15 +76,16 @@ const HeroSectionWithForm = () => {
               Schedule a visit to our library in Nasrullaganj
             </h2>
 
-            <form className="space-y-4">
+            <form className="space-y-4" onSubmit={handleSubmit}>
               <div>
                 <label htmlFor="name" className="block text-sm font-medium text-gray-700">Name</label>
                 <input
                   id="name"
                   type="text"
+                  value={formData.name}
+                  onChange={handleChange}
                   placeholder="Enter your name"
                   className="w-full mt-1 p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
-                  aria-label="Name"
                 />
               </div>
 
@@ -52,9 +94,10 @@ const HeroSectionWithForm = () => {
                 <input
                   id="email"
                   type="email"
+                  value={formData.email}
+                  onChange={handleChange}
                   placeholder="Enter your email"
                   className="w-full mt-1 p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
-                  aria-label="Email"
                 />
               </div>
 
@@ -63,9 +106,10 @@ const HeroSectionWithForm = () => {
                 <input
                   id="phone"
                   type="tel"
+                  value={formData.phone}
+                  onChange={handleChange}
                   placeholder="Enter your phone number"
                   className="w-full mt-1 p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
-                  aria-label="Phone"
                 />
               </div>
 
@@ -75,8 +119,9 @@ const HeroSectionWithForm = () => {
                   <input
                     id="date"
                     type="date"
+                    value={formData.date}
+                    onChange={handleChange}
                     className="w-full mt-1 p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
-                    aria-label="Visit Date"
                   />
                 </div>
 
@@ -85,11 +130,14 @@ const HeroSectionWithForm = () => {
                   <input
                     id="time"
                     type="time"
+                    value={formData.time}
+                    onChange={handleChange}
                     className="w-full mt-1 p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
-                    aria-label="Visit Time"
                   />
                 </div>
               </div>
+
+              {status && <p className="text-sm text-green-600">{status}</p>}
 
               <button
                 type="submit"
