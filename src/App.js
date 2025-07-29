@@ -10,9 +10,12 @@ import Aboutus from './components/Aboutus/Aboutus';
 import LibraryGallery from './components/Gallery/Gallery';
 import Team from './components/Team/Team';
 
+import ScrollToTop from './components/Footer/ScrollToTop';
+
 function App() {
   return (
     <>
+    <ScrollToTop />
       <Routes>
         <Route path='/' element={<HeroSectionWithForm />} />
         <Route path='/about' element={<Aboutus />} />
