@@ -14,6 +14,7 @@ const HeroSectionWithForm = () => {
   });
 
   const [status, setStatus] = useState('');
+  const [statusType, setStatusType] = useState(''); // 'success' or 'error'
 
   const handleChange = (e) => {
     setFormData(prev => ({
@@ -36,13 +37,27 @@ const HeroSectionWithForm = () => {
 
       if (res.ok) {
         setStatus('Form submitted successfully!');
+        setStatusType('success');
         setFormData({ name: '', email: '', phone: '', date: '', time: '' });
       } else {
-        setStatus(`Error: ${data.message}`);
+        setStatus(data.message || 'Something went wrong.');
+        setStatusType('error');
       }
+
+      // Auto-hide message after 3 seconds
+      setTimeout(() => {
+        setStatus('');
+        setStatusType('');
+      }, 3000);
+
     } catch (error) {
       console.error(error);
       setStatus('Something went wrong.');
+      setStatusType('error');
+      setTimeout(() => {
+        setStatus('');
+        setStatusType('');
+      }, 3000);
     }
   };
 
@@ -137,7 +152,15 @@ const HeroSectionWithForm = () => {
                 </div>
               </div>
 
-              {status && <p className="text-sm text-green-600">{status}</p>}
+              {status && (
+                <div
+                  className={`p-3 rounded-md text-white text-sm font-medium shadow-md transition-all ${
+                    statusType === 'error' ? 'bg-red-600' : 'bg-green-600'
+                  }`}
+                >
+                  {status}
+                </div>
+              )}
 
               <button
                 type="submit"
