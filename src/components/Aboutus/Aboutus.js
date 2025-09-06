@@ -7,13 +7,13 @@ import { Helmet } from "react-helmet-async";
 function Aboutus() {
   return (
     <>
- <Helmet>
+<Helmet>
         <title>About Self Study Library – Nasrullaganj’s Top Study Space</title>
         <meta
           name="description"
           content="Learn more about Self Study Library in Nasrullaganj – our mission, facilities, and how we help students prepare for exams."
         />
-        <link rel="canonical" href="https://self-study-library.onrender.com/" />
+        <link rel="canonical" href="https://self-study-library.onrender.com/about" />
       </Helmet>
 
       {/* Hero Section */}

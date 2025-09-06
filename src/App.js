@@ -18,15 +18,6 @@ import Chatbot from './components/Chatbot/Chatbot';
 function App() {
   return (
     <>
-     <Helmet>
-        <title>Best Library in Nasrullaganj | Self Study Library</title>
-        <meta
-          name="description"
-          content="Self Study Library in Nasrullaganj offers AC reading halls, Wi-Fi, power backup, lockers and a quiet environment. Open daily 8AM–8PM near HDFC Bank, Bherunda."
-        />
-        <link rel="canonical" href="https://self-study-library.onrender.com/" />
-      </Helmet>
-
     <ScrollToTop />
       <Routes>
         <Route path='/' element={<HeroSectionWithForm />} />
