@@ -1,8 +1,21 @@
 import React from 'react';
 import Co from '../../image/co.jpeg';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 const ContactUs = () => {
   return (
+    <>
+
+    <Helmet>
+            <title>Contact Self Study Library | Best Library in Nasrullaganj</title>
+            <meta
+              name="description"
+              content="Get in touch with Self Study Library. Open 8AM–8PM daily. Located near HDFC Bank, Bherunda, Nasrullaganj. Call us or visit today."
+            />
+            <link rel="canonical" href="https://self-study-library.onrender.com/contactus" />
+          </Helmet>
+
+
     <div className="w-full">
       {/* Hero Section */}
       <div className="relative bg-cover bg-center h-64 md:h-80" style={{ backgroundImage: `url(${Co})` }}>
@@ -86,7 +99,9 @@ const ContactUs = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
+
 
 export default ContactUs;
