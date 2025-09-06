@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import './price.css';
 
 function Price() {
   return (
@@ -50,7 +51,8 @@ Affordable Packages and Membership Plans for Library
         </div>
 
         {/* Pro Plan - Highlighted */}
-        <div className="bg-white rounded-2xl border border-indigo-600 p-6 shadow-sm sm:px-8 lg:p-12 ring-2 ring-indigo-600">
+        <div className="bg-white rounded-2xl border border-indigo-600 p-6 shadow-sm sm:px-8 lg:p-12 ring-2 ring-indigo-600 box">
+          <div className="ribbon"><span>POPULAR</span></div>
           <div className="text-center">
             <h2 className="text-lg font-medium text-gray-900">3 Month</h2>
             <p className="mt-2 sm:mt-4">

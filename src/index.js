@@ -1,4 +1,5 @@
 import React from 'react';
+import { HelmetProvider } from "react-helmet-async";
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
@@ -13,6 +14,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
  
  <BrowserRouter>
+ <HelmetProvider>
  <Header />
  <span className="flex items-center">
   <span className="h-px flex-1 bg-gray-300"></span>
@@ -31,6 +33,7 @@ root.render(
 
     <App />
     <Footer />
+    </HelmetProvider>
     </BrowserRouter>
 );
 
