@@ -2,10 +2,20 @@ import React from "react";
 import palImage from '../../image/a1.jpg';
 import B2 from '../../image/q1.jpg';
 import B3 from '../../image/q2.jpg';
+import { Helmet } from "react-helmet-async";
 
 function Aboutus() {
   return (
     <>
+ <Helmet>
+        <title>About Self Study Library – Nasrullaganj’s Top Study Space</title>
+        <meta
+          name="description"
+          content="Learn more about Self Study Library in Nasrullaganj – our mission, facilities, and how we help students prepare for exams."
+        />
+        <link rel="canonical" href="https://self-study-library.onrender.com/" />
+      </Helmet>
+
       {/* Hero Section */}
       <div
         className="relative bg-cover bg-center h-64 md:h-80"
