@@ -1,9 +1,53 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './price.css';
+import { Helmet } from 'react-helmet-async';
 
 function Price() {
   return (
+    <>
+    <Helmet>
+  <title>Library Fees & Membership Plans – Self Study Library Nasrullaganj</title>
+
+  <meta 
+    name="description" 
+    content="Check affordable monthly, 3-month, and 6-month library membership plans at Self Study Library Nasrullaganj. Includes AC facility, WiFi, CCTV security, parking, drinking water, charging points & comfortable seating." 
+  />
+
+  <meta 
+    name="keywords" 
+    content="library fees Nasrullaganj, Self Study Library price, study room charges, library monthly fee, AC library Nasrullaganj, membership plans, student library pricing, affordable library packages" 
+  />
+
+  {/* Open Graph */}
+  <meta property="og:title" content="Library Fees & Membership Plans – Self Study Library" />
+  <meta 
+    property="og:description" 
+    content="View affordable membership plans including 1 month, 3 month, and 6 month packages at Self Study Library Nasrullaganj." 
+  />
+  <meta 
+    property="og:image" 
+    content="https://self-study-library.onrender.com/" 
+  />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://self-study-library.onrender.com/" />
+
+  {/* Twitter */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Library Fees & Membership Plans – Self Study Library" />
+  <meta 
+    name="twitter:description" 
+    content="See all affordable library packages including AC seating, WiFi, CCTV security and more at Self Study Library Nasrullaganj." 
+  />
+  <meta 
+    name="twitter:image" 
+    content="https://self-study-library.onrender.com/" 
+  />
+
+  {/* Canonical */}
+  <link rel="canonical" href="https://self-study-library.onrender.com/" />
+</Helmet>
+
     <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 bg-gray-900">
 
 <h1 className="text-3xl sm:text-4xl font-extrabold text-center text-white mb-10">
@@ -128,6 +172,7 @@ Affordable Packages and Membership Plans for Library
         </div>
       </div>
     </div>
+    </>
   );
 }
 

@@ -6,14 +6,48 @@ const ContactUs = () => {
   return (
     <>
 
-    <Helmet>
-            <title>Contact Self Study Library | Best Library in Nasrullaganj</title>
-            <meta
-              name="description"
-              content="Get in touch with Self Study Library. Open 8AM–8PM daily. Located near HDFC Bank, Bherunda, Nasrullaganj. Call us or visit today."
-            />
-            <link rel="canonical" href="https://self-study-library.onrender.com/contactus" />
-          </Helmet>
+   <Helmet>
+  <title>Contact Self Study Library – Best Study & Reading Space in Nasrullaganj</title>
+
+  <meta
+    name="description"
+    content="Contact Self Study Library, Nasrullaganj. Call +91 9993938894 or visit our AC study space near HDFC Bank, Bherunda. Open 8 AM to 8 PM daily. Get directions, location, and inquiry support."
+  />
+
+  <meta
+    name="keywords"
+    content="contact self study library, library contact Nasrullaganj, study space contact, reading room Nasrullaganj, AC library Nasrullaganj, library near HDFC Bank Nasrullaganj"
+  />
+
+  {/* Open Graph Tags */}
+  <meta property="og:title" content="Contact Self Study Library – Best Library in Nasrullaganj" />
+  <meta
+    property="og:description"
+    content="Reach out to Self Study Library for inquiries, membership, directions, or facility details. Located near HDFC Bank, Bherunda, Nasrullaganj."
+  />
+  <meta
+    property="og:image"
+    content="https://self-study-library.onrender.com/"
+  />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://self-study-library.onrender.com/" />
+
+  {/* Twitter Tags */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Contact Self Study Library – Nasrullaganj" />
+  <meta
+    name="twitter:description"
+    content="Open 8AM–8PM. Contact Self Study Library for membership details, address, map location, and inquiries."
+  />
+  <meta
+    name="twitter:image"
+    content="https://self-study-library.onrender.com/"
+  />
+
+  {/* Canonical URL */}
+  <link rel="canonical" href="https://self-study-library.onrender.com/" />
+</Helmet>
+
 
 
     <div className="w-full">

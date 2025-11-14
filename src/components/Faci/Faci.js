@@ -1,5 +1,6 @@
 import React from 'react';
 import { Wifi, ParkingCircle, Clock, Snowflake, Wine, Shield } from 'lucide-react';
+import { Helmet } from 'react-helmet-async';
 
 const amenities = [
   {
@@ -36,6 +37,35 @@ const amenities = [
 
 const AmenitiesLayout = () => {
   return (
+    <>
+    <Helmet>
+    <title>Self Study Library | Best AC Study Rooms & Library in Nasrullaganj</title>
+
+  <meta
+    name="description"
+    content="Self Study Library is the best library in Nasrullaganj offering AC study rooms, silent environment, high-speed WiFi, comfortable seating, and flexible timing for UPSC, MPPSC, NEET, JEE & competitive exam preparation."
+  />
+
+  <meta
+    name="keywords"
+    content="Self Study Library Nasrullaganj, best library in Nasrullaganj, AC study room Nasrullaganj, self study space, UPSC library Nasrullaganj, MPPSC study room, NEET preparation library, JEE study hall, study room with wifi, silent study room"
+  />
+
+  <meta name="author" content="Self Study Library" />
+
+  {/* Open Graph for Social Media */}
+  <meta property="og:title" content="Self Study Library | Best AC Study Rooms in Nasrullaganj" />
+  <meta
+    property="og:description"
+    content="Top-rated AC Self Study Library in Nasrullaganj with silent study rooms, Wi-Fi, parking & comfortable environment for exam aspirants."
+  />
+  <meta property="og:image" content="https://self-study-library.onrender.com/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://self-study-library.onrender.com/" />
+
+  {/* Canonical URL */}
+  <link rel="canonical" href="https://self-study-library.onrender.com/" />
+    </Helmet>
     <section className="bg-gray-100 py-16">
       <div className="text-center mb-10">
         <h2 className="text-4xl font-bold text-gray-800">Amenities at Self Study Library in Nasrullaganj</h2>
@@ -54,6 +84,7 @@ const AmenitiesLayout = () => {
         ))}
       </div>
     </section>
+    </>
   );
 };
 

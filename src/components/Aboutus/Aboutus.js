@@ -8,13 +8,47 @@ function Aboutus() {
   return (
     <>
 <Helmet>
-        <title>About Self Study Library – Nasrullaganj’s Top Study Space</title>
-        <meta
-          name="description"
-          content="Learn more about Self Study Library in Nasrullaganj – our mission, facilities, and how we help students prepare for exams."
-        />
-        <link rel="canonical" href="https://self-study-library.onrender.com/about" />
-      </Helmet>
+  <title>About Self Study Library – Nasrullaganj’s Best Study & Reading Space</title>
+
+  <meta
+    name="description"
+    content="Discover Self Study Library in Nasrullaganj – a premium AC study space with high-speed WiFi, CCTV security, comfortable seating, and a peaceful environment for UPSC, MPPSC, NEET, JEE, LAW, CA and competitive exam preparation."
+  />
+
+  <meta
+    name="keywords"
+    content="about self study library, study library Nasrullaganj, reading room Nasrullaganj, AC library Nasrullaganj, best library for students, competitive exam study space, library near me, study zone Nasrullaganj"
+  />
+
+  {/* Open Graph Tags */}
+  <meta property="og:title" content="About Self Study Library – Nasrullaganj’s Best Study Space" />
+  <meta
+    property="og:description"
+    content="Learn about our mission and facilities – AC study rooms, WiFi, CCTV, power backup, peaceful reading environment and dedicated support for exam preparation."
+  />
+  <meta
+    property="og:image"
+    content="https://self-study-library.onrender.com/"
+  />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://self-study-library.onrender.com/" />
+
+  {/* Twitter Tags */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="About Self Study Library – Nasrullaganj’s Best Study Space" />
+  <meta
+    name="twitter:description"
+    content="Explore our mission, facilities and why Self Study Library is the top choice for students preparing for competitive exams."
+  />
+  <meta
+    name="twitter:image"
+    content="https://self-study-library.onrender.com/"
+  />
+
+  {/* Canonical URL */}
+  <link rel="canonical" href="https://self-study-library.onrender.com/" />
+</Helmet>
+
 
       {/* Hero Section */}
       <div
